@@ -1,1 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зачарования Rush Royale | GitHub Pages</title>
+    <meta name="description" content="Полный справочник зачарований для игры Rush Royale">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="magic-orb"></div>
+    <div class="magic-rune"></div>
+    
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Зачарования Rush Royale</h1>
+            <p class="subtitle">Усиль свою колоду магической силой</p>
+        </div>
+    </header>
 
+    <main class="container">
+        <section class="search-section">
+            <input type="text" class="search-box" placeholder="Поиск зачарований...">
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="common">Обычные</button>
+                <button class="filter-btn" data-filter="rare">Редкие</button>
+                <button class="filter-btn" data-filter="epic">Эпические</button>
+                <button class="filter-btn" data-filter="legendary">Легендарные</button>
+            </div>
+        </section>
+
+        <!-- Обычные зачарования -->
+        <section class="rarity-section" id="common">
+            <h2 class="section-title common-title">Обычные</h2>
+            <div class="enchantments-grid">
+                <!-- Карточки зачарований -->
+                <div class="enchantment-card common" data-name="отмщение">
+                    <div class="rarity-badge">Обычное</div>
+                    <div class="enchantment-icon">🔄</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Отмщение</h3>
+                    </div>
+                    <span class="enchantment-type">Бафф</span>
+                    <p class="enchantment-description">После понижения ранга слияния пешки фракции урон другой пешки этой же фракции увеличивается на 10% в течение 5с.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">+10%</span>урон</div>
+                        <div class="stat"><span class="stat-value">5с</span>длительность</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card common" data-name="пограничники">
+                    <div class="rarity-badge">Обычное</div>
+                    <div class="enchantment-icon">📐</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Пограничники</h3>
+                    </div>
+                    <span class="enchantment-type">Позиционное</span>
+                    <p class="enchantment-description">На угловых клетках поля урон пешек фракции повышен на 1%.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">+1%</span>урон</div>
+                        <div class="stat"><span class="stat-value">4</span>клетки</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card common" data-name="порыв">
+                    <div class="rarity-badge">Обычное</div>
+                    <div class="enchantment-icon">⚡</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Порыв</h3>
+                    </div>
+                    <span class="enchantment-type">Поддерживающее</span>
+                    <p class="enchantment-description">При слиянии пешек фракции увеличивает скорость атаки 2 случайных пешек на 5% в течение 10с.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">+5%</span>скорость</div>
+                        <div class="stat"><span class="stat-value">10с</span>длительность</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card common" data-name="гнев">
+                    <div class="rarity-badge">Обычное</div>
+                    <div class="enchantment-icon">😠</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Гнев</h3>
+                    </div>
+                    <span class="enchantment-type">Атакующее</span>
+                    <p class="enchantment-description">После появления пешки этой фракции на поле увеличивает её урон на 10% в течение 20 сек.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">+10%</span>урон</div>
+                        <div class="stat"><span class="stat-value">20с</span>длительность</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card common" data-name="подкидыш">
+                    <div class="rarity-badge">Обычное</div>
+                    <div class="enchantment-icon">💨</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Подкидыш</h3>
+                    </div>
+                    <span class="enchantment-type">Тактическое</span>
+                    <p class="enchantment-description">С шансом 8% убийство мини-босса пешкой этой фракции призывает ослабленного мини-босса Вихрь на сторону противника.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">8%</span>шанс</div>
+                        <div class="stat"><span class="stat-value">Вихрь</span>мини-босс</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card common" data-name="карманное изнурение">
+                    <div class="rarity-badge">Обычное</div>
+                    <div class="enchantment-icon">💀</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Карманное изнурение</h3>
+                    </div>
+                    <span class="enchantment-type">Контроль</span>
+                    <p class="enchantment-description">Убийство босса пешкой этой фракции в конце раунда создаёт снаряд, который летит в клетку поля и снижает скорость атаки пешки на 40% в течение 15с. <span class="coop-badge">Co-Op: ускоряет</span></p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">-40%</span>скорость</div>
+                        <div class="stat"><span class="stat-value">15с</span>длительность</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card common" data-name="боевой азарт">
+                    <div class="rarity-badge">Обычное</div>
+                    <div class="enchantment-icon">🎯</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Боевой азарт</h3>
+                    </div>
+                    <span class="enchantment-type">Бафф</span>
+                    <p class="enchantment-description">С шансом 1% увеличивает крит, урон пешек этой фракции на 3% в течение 10 сек. после убийства монстра.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">1%</span>шанс</div>
+                        <div class="stat"><span class="stat-value">+3%</span>урон и крит</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Редкие зачарования -->
+        <section class="rarity-section" id="rare">
+            <h2 class="section-title rare-title">Редкие</h2>
+            <div class="enchantments-grid">
+                <div class="enchantment-card rare" data-name="охота на дракона">
+                    <div class="rarity-badge">Редкое</div>
+                    <div class="enchantment-icon">🐉</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Охота на дракона</h3>
+                    </div>
+                    <span class="enchantment-type">Экономическое</span>
+                    <p class="enchantment-description">Убийство босса или мини-босса пешкой этой фракции увеличивает получаемую с него ману на 25%.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">+25%</span>маны</div>
+                        <div class="stat"><span class="stat-value">боссы</span>цель</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card rare" data-name="подкидыш ii">
+                    <div class="rarity-badge">Редкое</div>
+                    <div class="enchantment-icon">💨</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Подкидыш II</h3>
+                        <span class="enchantment-level">Уровень 2</span>
+                    </div>
+                    <span class="enchantment-type">Тактическое</span>
+                    <p class="enchantment-description">С шансом 15% убийство мини-босса пешкой этой фракции призывает ослабленного мини-босса Знаменосец на сторону противника.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">15%</span>шанс</div>
+                        <div class="stat"><span class="stat-value">Знаменосец</span>мини-босс</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card rare" data-name="зачарованный монстр">
+                    <div class="rarity-badge">Редкое</div>
+                    <div class="enchantment-icon">👹</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Зачарованный монстр</h3>
+                    </div>
+                    <span class="enchantment-type">Призыв</span>
+                    <p class="enchantment-description">Убийство монстра пешкой этой фракции с шансом 4% призывает зачарованного монстра на сторону противника. Зачарованного монстра нельзя замедлить.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">4%</span>шанс</div>
+                        <div class="stat"><span class="stat-value">незамедлим</span>свойство</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card rare" data-name="гнев ii">
+                    <div class="rarity-badge">Редкое</div>
+                    <div class="enchantment-icon">😠</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Гнев II</h3>
+                        <span class="enchantment-level">Уровень 2</span>
+                    </div>
+                    <span class="enchantment-type">Атакующее</span>
+                    <p class="enchantment-description">После появления пешки этой фракции на поле увеличивает её урон на 15% в течение 20 сек.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">+15%</span>урон</div>
+                        <div class="stat"><span class="stat-value">20с</span>длительность</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card rare" data-name="изобилие">
+                    <div class="rarity-badge">Редкое</div>
+                    <div class="enchantment-icon">📈</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Изобилие</h3>
+                    </div>
+                    <span class="enchantment-type">Бафф</span>
+                    <p class="enchantment-description">Пешки этой фракции, имеющие ранг слияния 5 и выше, увеличивают свой урон на 2% за каждый ранг слияния (максимум – 6% на 7 ранге слияния).</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">+2%</span>за ранг</div>
+                        <div class="stat"><span class="stat-value">+6%</span>максимум</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card rare" data-name="пограничники ii">
+                    <div class="rarity-badge">Редкое</div>
+                    <div class="enchantment-icon">📐</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Пограничники II</h3>
+                        <span class="enchantment-level">Уровень 2</span>
+                    </div>
+                    <span class="enchantment-type">Позиционное</span>
+                    <p class="enchantment-description">На угловых клетках поля урон пешек фракции повышен на 2%.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">+2%</span>урон</div>
+                        <div class="stat"><span class="stat-value">4</span>клетки</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card rare" data-name="карманное изнурение ii">
+                    <div class="rarity-badge">Редкое</div>
+                    <div class="enchantment-icon">💀</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Карманное изнурение II</h3>
+                        <span class="enchantment-level">Уровень 2</span>
+                    </div>
+                    <span class="enchantment-type">Контроль</span>
+                    <p class="enchantment-description">Убийство босса пешкой этой фракции создает в конце волны снаряд, который снижает на 30% скорость атаки пешек противника, находящихся в одном столбце. <span class="coop-badge">Co-Op: ускоряет</span></p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">-30%</span>скорость</div>
+                        <div class="stat"><span class="stat-value">1 столбец</span>зона</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Эпические зачарования -->
+        <section class="rarity-section" id="epic">
+            <h2 class="section-title epic-title">Эпические</h2>
+            <div class="enchantments-grid">
+                <div class="enchantment-card epic" data-name="зачарованный монстр ii">
+                    <div class="rarity-badge">Эпическое</div>
+                    <div class="enchantment-icon">👹</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Зачарованный монстр II</h3>
+                        <span class="enchantment-level">Уровень 2</span>
+                    </div>
+                    <span class="enchantment-type">Призыв</span>
+                    <p class="enchantment-description">Убийство монстра пешкой этой фракции с шансом 6% призывает зачарованного монстра на сторону противника. Зачарованного монстра нельзя замедлить.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">6%</span>шанс</div>
+                        <div class="stat"><span class="stat-value">незамедлим</span>свойство</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card epic" data-name="боевой азарт ii">
+                    <div class="rarity-badge">Эпическое</div>
+                    <div class="enchantment-icon">🎯</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Боевой азарт II</h3>
+                        <span class="enchantment-level">Уровень 2</span>
+                    </div>
+                    <span class="enchantment-type">Бафф</span>
+                    <p class="enchantment-description">С шансом 1.5% увеличивает крит, урон пешек этой фракции на 10% в течение 10 сек. после убийства монстра.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">1.5%</span>шанс</div>
+                        <div class="stat"><span class="stat-value">+10%</span>урон и крит</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card epic" data-name="контрзаклятье">
+                    <div class="rarity-badge">Эпическое</div>
+                    <div class="enchantment-icon">🛡️</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Контрзаклятье</h3>
+                    </div>
+                    <span class="enchantment-type">Защитное</span>
+                    <p class="enchantment-description">С шансом 10% убийство босса или мини-босса пешкой фракции снимет негативные эффекты с 1 пешки и оглушит 1 пешку противника на 4 сек. <span class="coop-badge">Co-Op: без оглушения</span></p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">10%</span>шанс</div>
+                        <div class="stat"><span class="stat-value">4с</span>оглушение</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card epic" data-name="серая мораль">
+                    <div class="rarity-badge">Эпическое</div>
+                    <div class="enchantment-icon">🌑</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Серая мораль</h3>
+                    </div>
+                    <span class="enchantment-type">Тактическое</span>
+                    <p class="enchantment-description">При использовании способности героя другим игроком урон ваших пешек этой фракции увеличивается на 20% в течение 5с.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">+20%</span>урон</div>
+                        <div class="stat"><span class="stat-value">5с</span>длительность</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card epic" data-name="братство">
+                    <div class="rarity-badge">Эпическое</div>
+                    <div class="enchantment-icon">🤝</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Братство</h3>
+                    </div>
+                    <span class="enchantment-type">Поддерживающее</span>
+                    <p class="enchantment-description">Если пешка фракции получила негативный эффект, то урон другой пешки этой же фракции увеличивается на 15% в течение 12с. <span class="cooldown">15с кд</span></p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">+15%</span>урон</div>
+                        <div class="stat"><span class="stat-value">12с</span>длительность</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card epic" data-name="астрал">
+                    <div class="rarity-badge">Эпическое</div>
+                    <div class="enchantment-icon">✨</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Астрал</h3>
+                    </div>
+                    <span class="enchantment-type">Защитное</span>
+                    <p class="enchantment-description">Если пешка фракции должна потерять ранг слияния, то вместо этого с шансом 25% она на 2с попадет в астрал. По окончании эффекта она не потеряет ранг слияния. <span class="cooldown">7с кд</span></p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">25%</span>шанс</div>
+                        <div class="stat"><span class="stat-value">7с</span>кулдаун</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Легендарные зачарования -->
+        <section class="rarity-section" id="legendary">
+            <h2 class="section-title legendary-title">Легендарные</h2>
+            <div class="enchantments-grid">
+                <div class="enchantment-card legendary" data-name="щедрость">
+                    <div class="rarity-badge">Легендарное</div>
+                    <div class="enchantment-icon">💰</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Щедрость</h3>
+                    </div>
+                    <span class="enchantment-type">Экономическое</span>
+                    <p class="enchantment-description">С шансом 15% призыв пешки этой фракции вернёт 50% потраченной маны!</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">15%</span>шанс</div>
+                        <div class="stat"><span class="stat-value">50%</span>возврат маны</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card legendary" data-name="контрзаклятье ii">
+                    <div class="rarity-badge">Легендарное</div>
+                    <div class="enchantment-icon">🛡️</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Контрзаклятье II</h3>
+                        <span class="enchantment-level">Уровень 2</span>
+                    </div>
+                    <span class="enchantment-type">Защитное</span>
+                    <p class="enchantment-description">С шансом 20% убийство босса или мини-босса пешкой фракции снимет негативные эффекты с 1 пешки и оглушит 1 пешку противника на 8 сек. <span class="coop-badge">Co-Op: без оглушения</span></p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">20%</span>шанс</div>
+                        <div class="stat"><span class="stat-value">8с</span>оглушение</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card legendary" data-name="карманное проклятие">
+                    <div class="rarity-badge">Легендарное</div>
+                    <div class="enchantment-icon">☠️</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Карманное проклятие</h3>
+                    </div>
+                    <span class="enchantment-type">Контроль</span>
+                    <p class="enchantment-description">Убийство босса пешкой этой фракции с шансом 20% проклянет клетку противника, снижая ранг слияния пешки через 5с. <span class="coop-badge">Co-Op: повышает ранг</span></p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">20%</span>шанс</div>
+                        <div class="stat"><span class="stat-value">1-2</span>клетки</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card legendary" data-name="чародублирование">
+                    <div class="rarity-badge">Легендарное</div>
+                    <div class="enchantment-icon">✨</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Чародублирование</h3>
+                    </div>
+                    <span class="enchantment-type">Стратегическое</span>
+                    <p class="enchantment-description">При поглощении пешки фракции либо при снижении ранга слияния пешки фракции с шансом 12% призывает пешку первого ранга слияния.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">12%</span>шанс</div>
+                        <div class="stat"><span class="stat-value">ранг 1</span>пешка</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card legendary" data-name="братство ii">
+                    <div class="rarity-badge">Легендарное</div>
+                    <div class="enchantment-icon">🤝</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Братство II</h3>
+                        <span class="enchantment-level">Уровень 2</span>
+                    </div>
+                    <span class="enchantment-type">Поддерживающее</span>
+                    <p class="enchantment-description">Если пешка фракции получила негативный эффект, то урон других пешек фракции увеличивается на 13% в течение 9с. <span class="cooldown">18с кд</span></p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">+13%</span>урон</div>
+                        <div class="stat"><span class="stat-value">9с</span>длительность</div>
+                    </div>
+                </div>
+
+                <div class="enchantment-card legendary" data-name="обратка">
+                    <div class="rarity-badge">Легендарное</div>
+                    <div class="enchantment-icon">⚡</div>
+                    <div class="enchantment-header">
+                        <h3 class="enchantment-name">Обратка</h3>
+                    </div>
+                    <span class="enchantment-type">Контратакующее</span>
+                    <p class="enchantment-description">После оглушения урон пешки фракции растет на 80% на 6с. Также при снижении ранга слияния пешка фракции увеличивает свой урон на 40% на 6с.</p>
+                    <div class="enchantment-stats">
+                        <div class="stat"><span class="stat-value">+80%</span>после оглушения</div>
+                        <div class="stat"><span class="stat-value">+40%</span>после слияния</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Rush Royale Enchantments Guide © 2024</p>
+            <p>Неофициальный фанатский сайт. Все права на игру принадлежат соответствующим владельцам.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
